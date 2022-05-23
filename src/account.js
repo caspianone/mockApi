@@ -1,7 +1,5 @@
 export const fakeData = () => {
 
-
-
      return { data : { account: [
                  {
                      "AccountId": "0138d905-fdaf-4abf-b655-c3e4a1850674",
@@ -30,8 +28,4 @@ export const fakeData = () => {
                      ]
                  }
              ]}}
-
-
-    //
-    // ]}}})
 }
