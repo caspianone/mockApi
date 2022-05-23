@@ -6,8 +6,8 @@ import {fakeData} from "./account.js";
 const app = express()
 const clientAuthMiddleware = () => (req, res, next) => {
     if (!req.client.authorized) {
-        console.log('unauthorized')
-        // return res.status(401).send('Invalid client certificate authentication.');
+        console.log('unauthorized attempt')
+        return res.status(401).send('Invalid client certificate authentication.');
     }
     return next();
 };

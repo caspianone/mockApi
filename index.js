@@ -5,7 +5,7 @@ const req = https.request(
     {
         hostname: '127.0.0.1',
         port: 3001,
-        path: '/account',
+        path: '/',
         method: 'GET',
         cert: fs.readFileSync('client.crt'),
         key: fs.readFileSync('client.key'),
