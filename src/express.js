@@ -15,13 +15,8 @@ const clientAuthMiddleware = () => (req, res, next) => {
 app.use(clientAuthMiddleware());
 const port = 3001
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
-
-app.get('/account', (req, res) => {
-    res.send(JSON.stringify(fakeData(), null, 2))
-})
+app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/account', (req, res) => res.send(JSON.stringify(fakeData(), null, 2)))
 
 
 
@@ -32,6 +27,9 @@ https
             // ...
             cert: fs.readFileSync('../server.crt'),
             key: fs.readFileSync('../server.key'),
+            requestCert: true,
+            rejectUnauthorized: false,
+            ca: fs.readFileSync('../ca.crt'),
             // ...
         },
         app
