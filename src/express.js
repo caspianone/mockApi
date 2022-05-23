@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/account', (req, res) => {
-    res.send(JSON.stringify(fakeData()))
+    res.send(JSON.stringify(fakeData(), null, 2))
 })
 
 
