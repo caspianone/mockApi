@@ -1,0 +1,25 @@
+{
+  "name": "mock_fdx_api",
+  "version": "1.0.0",
+  "description": "mock api",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caspianone/mockApi.git"
+  },
+  "author": "lewis poe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caspianone/mockApi/issues"
+  },
+  "homepage": "https://github.com/caspianone/mockApi#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "https": "^1.0.0"
+  }
+}
